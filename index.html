@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PC Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/variables.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script type="module" src="./assets/js/main.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <section class="section-header">
+        <h1 class="title">Build your PC</h1>
+      </section>
+
+      <section class="section-cover">
+        <img src="./assets/images/pc-cover.png" alt="PC Cover Image" />
+      </section>
+
+      <section class="section-grid">
+        <div class="build-heading">
+          <h2>Build Options</h2>
+          <p>Please select the parts for your computer build.</p>
+        </div>
+
+        <div class="build-option">
+          <h3>Motherboard</h3>
+          <div>
+            <p>You have currently selected: <span>No Option</span></p>
+            <button class="button-secondary">Pick Motherboard</button>
+          </div>
+          <div style="display: none">
+            <ul>
+              <li data-price="500">High Performance - $500</li>
+              <li data-price="400">Standard - $400</li>
+              <li data-price="250">Budget - $250</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="build-option">
+          <h3>CPU</h3>
+          <div>
+            <p>You have currently selected: <span>No Option</span></p>
+            <button class="button-secondary">Pick CPU</button>
+          </div>
+          <div style="display: none">
+            <ul>
+              <li>AMD Threadripper - $3500</li>
+              <li>Intel Core i9 - $600</li>
+              <li>AMD Ryzen - $400</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-total">
+        <h2>Total: $0</h2>
+        <div>
+          <button
+            class="button-primary"
+            disabled
+            title="Add options to your build to proceed"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

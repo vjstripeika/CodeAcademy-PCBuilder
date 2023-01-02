@@ -1,0 +1,127 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h1.title {
+  font-size: 3.5em;
+  margin: 0.83em 0;
+  color: var(--primary-color);
+  background: linear-gradient(to top, var(--primary-color), var(--text-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+[class^="section"] {
+  margin-bottom: 20px;
+}
+
+[class$="grid"] {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-cover {
+  background: var(--accent-color);
+  padding: 30px 0;
+}
+
+.section-cover img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.section-total {
+  background: var(--accent-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+[class^="button"] {
+  display: inline-block;
+  padding: 20px 50px;
+  border-radius: 0px;
+  text-decoration: none;
+  color: #fff;
+  background: var(--primary-color);
+  border: 0px;
+  font-size: 1.17em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+[class^="button"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+[class^="button"]:not(:disabled):hover {
+  background: var(--text-color);
+  opacity: 0.8;
+}
+
+.button-primary {
+  background: var(--primary-color);
+}
+
+.button-secondary {
+  background: var(--text-color);
+}
+
+[class^="build"] {
+  padding: 20px;
+}
+
+.build-heading {
+  grid-column: span 2;
+}
+
+.build-option ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.build-option li {
+  padding: 10px 0;
+  text-decoration: underline;
+  font-size: 1.17em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.build-option li:hover {
+  color: var(--primary-color);
+}

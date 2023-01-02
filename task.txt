@@ -1,0 +1,26 @@
+We will be creating a PC builder application.
+
+The application will be a web application that will allow users to build a PC, calculates the price of the PC, 
+and allows users to click on a button "Add to Cart". This button will log the PC data to the console.
+
+Description:
+- All options are provided as an example. They should be removed from html and dynamically created with javascript.
+- The user should be able to select a CPU, Motherboard, RAM, GPU, and Storage.
+- Add to cart button should be disabled until all options are selected.
+- The options should be shown then pressing on the "Pick an Option" button.
+- The options should be hidden then pressing on the option choice.
+- The selected option should be shown in the paragraph text.
+- The option price should be added to the total price.
+
+Requirements:
+- Use "data" object to store all initial data.
+- Use a dynamic function to create option elements and add them to the DOM.
+- Use a dynamic function to create option choice elements and add them to the DOM.
+
+- Use "elements" object to store all elements.
+- Elements object should contain newly created option elements.
+
+- Use a "state" object to track "optionValue" and "optionPrice".
+- State object should have a "totalPrice" property.
+- State object should have two methods "updateTotalPrice" and "checkIfAddToCartIsAvailable".
+
